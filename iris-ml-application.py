@@ -9,8 +9,8 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-st.write('Compilation Iris Flower opening time lapse')
 st.video('https://www.youtube.com/watch?v=rcI0lk9X-YE')
+st.image('https://www.gardendesign.com/pictures/images/900x705Max/site_3/iris-louisiana-black-gamecock-iris-beardless-louisiana-iris-shutterstock-com_12592.jpg')
 
 st.sidebar.header('User Input Parameters')
 
