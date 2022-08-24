@@ -50,5 +50,3 @@ st.write(prediction_proba)
 
 if st.button('Great Job!'):
      st.write('You have completed the course!')
- else:
-     st.write('Goodbye')
