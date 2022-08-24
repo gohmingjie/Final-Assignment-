@@ -9,7 +9,7 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-video_file = open('Compilation Iris Flower opening time lapse. 4K')
+st.write('Compilation Iris Flower opening time lapse')
 st.video('https://www.youtube.com/watch?v=rcI0lk9X-YE')
 
 st.sidebar.header('User Input Parameters')
