@@ -28,6 +28,8 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
+st.download_button(label='Download data', data=df, file_name='Iris',mime=csv)
+
 iris = datasets.load_iris()
 X = iris.data
 Y = iris.target
@@ -48,4 +50,4 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
-st.download_button(label='Download data', file_name='Iris')
+
