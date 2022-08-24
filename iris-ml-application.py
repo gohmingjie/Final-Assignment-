@@ -3,11 +3,6 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
-options = st.multiselect(
-     'Species',
-     ['setosa', 'versicolor', 'virginica'],
-     )
-
 st.write('You selected:', options)
 st.write("""
 # Simple Iris Flower Prediction App
@@ -43,6 +38,11 @@ clf.fit(X, Y)
 
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
+
+options = st.multiselect(
+     'Species',
+     ['setosa', 'versicolor', 'virginica'],
+     )
 
 st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
