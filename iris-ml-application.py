@@ -48,6 +48,8 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
+
+csv = convert_st
 st.download_button(
      label="Download data as CSV",
      data=csv,
