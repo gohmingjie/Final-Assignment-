@@ -48,4 +48,4 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
-st.download_button(label='Download data', data=*, file_name='Iris')
+st.download_button(label='Download data', data=prediction_proba, file_name='Iris')
