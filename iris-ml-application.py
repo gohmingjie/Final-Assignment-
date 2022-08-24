@@ -3,7 +3,10 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
-st.write('You selected:', options)
+from PIL import Image
+image = Image.open('iris.jpg')
+st.image(image, caption='Iris')
+
 st.write("""
 # Simple Iris Flower Prediction App
 
@@ -38,11 +41,6 @@ clf.fit(X, Y)
 
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
-
-options = st.multiselect(
-     'Species',
-     ['setosa', 'versicolor', 'virginica'],
-     )
 
 st.subheader('Class labels and their corresponding index number')
 st.write(iris.target_names)
