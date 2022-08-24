@@ -47,3 +47,12 @@ st.write(iris.target_names[prediction])
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+csv = convert_df(my_large_df)
+
+st.download_button(
+     label="Download data as CSV",
+     data=csv,
+     file_name='iris.csv',
+     mime='text/csv',
+ )
