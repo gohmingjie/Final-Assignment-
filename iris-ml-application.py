@@ -48,3 +48,7 @@ st.write(iris.target_names[prediction])
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
+if st.button('Great Job!'):
+     st.write('You have completed the course!')
+ else:
+     st.write('Goodbye')
