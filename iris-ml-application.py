@@ -3,6 +3,12 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
+options = st.multiselect(
+     'Species',
+     ['setosa', 'versicolor', 'virginica'],
+     ['setosa')
+
+st.write('You selected:', options)
 st.write("""
 # Simple Iris Flower Prediction App
 
