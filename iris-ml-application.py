@@ -28,6 +28,12 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
+chart_data = pd.ser_input_features(
+     np.random.randn(20, 3),
+     columns=['sepal_length', 'sepal_width', 'petal_length','petal_width'])
+
+st.line_chart(chart_data)
+
 iris = datasets.load_iris()
 X = iris.data
 Y = iris.target
@@ -47,3 +53,4 @@ st.write(iris.target_names[prediction])
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
