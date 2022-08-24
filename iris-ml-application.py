@@ -49,11 +49,9 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 @st.cache
- def convert_df(df):
-     # IMPORTANT: Cache the conversion to prevent computation on every rerun
-     return df.to_csv().encode('utf-8')
+ def convert_st(st):
 
-csv = convert_df(my_large_df)
+csv = convert_st(my_large_st)
 
 st.download_button(
      label="Download data as CSV",
