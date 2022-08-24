@@ -9,6 +9,11 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
+video_file = open('Compilation Iris Flower opening time lapse. 4K')
+video_bytes = video_file.read()
+
+st.video(https://www.youtube.com/watch?v=rcI0lk9X-YE,format="video")
+
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
