@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 options = st.multiselect(
      'Species',
      ['setosa', 'versicolor', 'virginica'],
-     ['setosa')
+     )
 
 st.write('You selected:', options)
 st.write("""
