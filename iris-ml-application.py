@@ -28,7 +28,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-st.download_button(label='Download data', data=df, file_name='Iris')
+st.download_button(label='Download data', data=df, file_name='Iris',mime='csv')
 
 iris = datasets.load_iris()
 X = iris.data
