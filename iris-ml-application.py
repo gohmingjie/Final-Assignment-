@@ -3,11 +3,6 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 
-from PIL import Image
-image = Image.open('Iris.jpg')
-
-st.image(image, caption='Iris')
-
 st.write("""
 # Simple Iris Flower Prediction App
 
@@ -33,7 +28,19 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-st.download_button(label='Download data', data=df, file_name='Iris',mime='csv')
+iris=pd.read_csv("iris.csv")
+@st.cache
+def convert_df(iris):
+   return iris.to_csv().encode('utf-8')
+csv = convert_df(iris)
+
+st.download_button(
+   "Download Iris Data",
+   csv,
+   "iris.csv",
+   "text/csv",
+   key='download-csv'
+)
 
 iris = datasets.load_iris()
 X = iris.data
